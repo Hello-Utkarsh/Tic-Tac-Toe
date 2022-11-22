@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    color: white;
+    list-style-type: none;
+    background-color: black;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    height: 55px;
+
+}
+
+nav ul li {
+    padding-top: 13px;
+    font-family: 'Rubik Microbe', cursive;
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    margin: 15px 10px;
+
+}
+
+.container {
+    padding: 3vh 0;
+    margin: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 7vw);
+    grid-template-rows: repeat(3, 7vw);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5vw;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: rgb(216, 216, 255);
+}
+
+.gameInfo {
+    padding: 5% 0;
+    margin: 0 30px;
+
+}
+
+.info {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.imgBox img {
+    width: 0;
+    transition: 2s ease-in-out;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.reset {
+    margin: 5%;
+    border-radius: 1vh;
+    padding: 4px 9px;
+    font-size: 14px;
+    font-family: sans-serif;
+    background-color: rgb(209, 173, 209);
+}
+
+@media screen and (max-width: 700px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .gameInfo {
+        text-align: center;
+        font-size: 80%;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 10vw);
+        grid-template-rows: repeat(3, 10vw);
+    }
+}
